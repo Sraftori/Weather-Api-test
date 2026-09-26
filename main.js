@@ -124,6 +124,8 @@ search.addEventListener("submit", async (event) => {
         weather.temperature
     );
 
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+        
     render(state, place, weather);
 
     statusText.innerHTML = "";
